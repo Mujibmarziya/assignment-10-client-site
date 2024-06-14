@@ -34,7 +34,7 @@ const AllArtAndCraft = () => {
     return (
         <div>
         <div>
-            <h1 className='text-black font-bold text-center mb-3'>All the Arts and crafts Items</h1>
+            <h1 className='text-pink-800 font-bold text-center mb-3'>All the Arts and crafts Items</h1>
         </div>
          <TableContainer  component={Paper}>
   <Table sx={{ minWidth: 650 }} aria-label="simple table">
