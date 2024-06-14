@@ -75,9 +75,9 @@ const MyArtAndCraft = () => {
             <h1 className='text-center text-pink-800  font-bold '>Our Top Cards</h1>
         </div>
 
-        <div className="text-center">
-                    <label htmlFor="firstname" className=" text-left text-black">Enter Category:</label>
-                    <select className="bg-white select text-black border-black select-primary w-full max-w-xs" onChange={handleCategoryChange} value={selectedCategory}>
+        <div className="text-center mt-4">
+                    <label htmlFor="firstname" className=" text-left text-pink-800 font-bold">Enter Category:</label>
+                    <select className="bg-white select text-slate-500 ml-3 border-pink-600 select-primary w-full max-w-xs" onChange={handleCategoryChange} value={selectedCategory}>
                                     <option disabled value="">Choose customization option.</option>
                                     <option value="yes">yes</option>
                                     <option value="no">no</option>
