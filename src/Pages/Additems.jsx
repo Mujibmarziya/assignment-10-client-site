@@ -66,15 +66,10 @@ const Additems = () => {
         <form onSubmit={handleAddItems} noValidate="" action="" className="container flex flex-col mx-auto space-y-12">
             <fieldset className="grid grid-cols-4 gap-6 p-6 rounded-md shadow-sm dark:bg-gray-50">
             <div
-      className="space-y-2 col-span-full lg:bg-cover lg:bg-center lg:bg-no-repeat bg-none rounded-xl lg:rounded-none   flex justify-center items-center lg:col-span-1"
-      style={{
-        backgroundImage: 'url("https://i.ibb.co/3h49PdW/neven-krcmarek-HWbx-SLvm-Sww-unsplash.jpg")'
-        // backgroundSize: 'cover',
-        // backgroundPosition: 'center', 
-        // backgroundRepeat: 'no-repeat' 
-      }}
+      className="space-y-2 col-span-full border-l-2 border-pink-800 border-t-2 border-b-2  rounded-xl flex justify-center items-center lg:col-span-1"
+     
     >
-      <p className=" font-semibold text-black lg:text-green-600">Add a item</p>
+      <p className=" font-bold text-black lg:text-pink-800 text-3xl">---Add A Item---</p>
       
     </div>
                 <div className="grid grid-cols-6 gap-4 col-span-full lg:col-span-3">
@@ -121,7 +116,7 @@ const Additems = () => {
                     </div>
                     <div className="col-span-full flex flex-col gap-2  sm:col-span-3">
                     <label htmlFor="firstname" className=" text-left text-black">Enter Category:</label>
-                    <select className="bg-white select text-black border-black select-primary w-full max-w-xs" onChange={handleCategoryChange} value={selectedCategory}>
+                    <select className="bg-white select text-black border-pink-600 select-primary w-full max-w-xs" onChange={handleCategoryChange} value={selectedCategory}>
                                     <option disabled value="">Choose YOUR item Category.</option>
                                     <option value="Card Making">Card Making</option>
                                     <option value="Scrapbooking">Scrapbooking</option>
@@ -135,7 +130,7 @@ const Additems = () => {
                     
                 </div>
             </fieldset>
-            <button className='btn btn-primary bg-black text-white border-none w-1/2 mx-auto'> Submit</button>
+            <button className='btn btn-primary bg-pink-800 text-white border-none w-1/2 mx-auto'> Submit</button>
             
         </form>
     </section>
