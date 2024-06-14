@@ -68,11 +68,11 @@ const Register = () => {
             
   <div className="hero-content flex-col ">
   <div>
-      <h1 className=' text-black text-xl font-bold text-center'>Create Your Account on our website.</h1>
-      <h2 className='text-slate-700 font-semibold text-xl mt-1'>And Enjoy Our Services!!</h2>
+      <h1 className=' text-pink-800 text-xl font-bold text-center'>Create Your Account on our website.</h1>
+      <h2 className='text-pink-500 font-semibold text-xl mt-1'>And Enjoy Our Services!!</h2>
     </div>
    
-    <div className="card shrink-0 w-full max-w-sm shadow-2xl border-l-2 border-black  bg-base-100">
+    <div className="card shrink-0 w-full max-w-sm shadow-2xl  shadow-pink-300  bg-base-100">
       <form className="card-body" onSubmit={handleSubmit(onSubmit)}>
       <div className="form-control">
           <label className="label">
@@ -117,12 +117,12 @@ const Register = () => {
           </label>
         </div>
         <div className="form-control mt-6">
-          <button className="btn btn-primary  bg-black  border-2 border-black text-white">Register</button>
+          <button className="btn btn-primary border-transparent bg-pink-600    text-white">Register</button>
         </div>
         <label className="label text-black">
                 Have an account?{" "}
                 <Link to="/login" className="label-text-alt link link-hover">
-                  Please <span className='btn bg-black text-white'>Login</span>
+                  Please <span className='btn border-transparent bg-pink-600 text-white'>Login</span>
                 </Link>
               </label>
       </form>

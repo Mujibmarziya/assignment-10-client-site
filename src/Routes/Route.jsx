@@ -46,19 +46,19 @@ import Error from '../ErrorPage/Error';
     {
       path: "/detail/:_id",
   element: <Details></Details>,
-  loader: ({params}) => fetch(`http://localhost:5001/items/${params._id}`)
+  loader: ({params}) => fetch(`https://assignment-10-server-blond-eight.vercel.app/items/${params._id}`)
   
     },
     {
       path: "/update/:_id",
   element:<Privateroute> <Update></Update></Privateroute>,
-  loader: ({params}) => fetch(`http://localhost:5001/items/${params._id}`)
+  loader: ({params}) => fetch(`https://assignment-10-server-blond-eight.vercel.app/items/${params._id}`)
   
     },
     {
       path: "/filterSubItems/:subcategory_Name",
   element:<Privateroute><FilterSubCat></FilterSubCat></Privateroute>,
-  // loader: ({params}) => fetch(`http://localhost:5001/items/${params.subcategory_Name}`)
+  // loader: ({params}) => fetch(`https://assignment-10-server-blond-eight.vercel.app/items/${params.subcategory_Name}`)
   
     },
     {

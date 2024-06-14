@@ -17,7 +17,7 @@ const AllArtAndCraft = () => {
     useEffect(() => {
       const fetchData = async () => {
         try {
-          const response = await axios.get('http://localhost:5001/items');
+          const response = await axios.get('https://assignment-10-server-blond-eight.vercel.app/items');
           
           
         setallCrafts(response.data);
@@ -51,7 +51,7 @@ const AllArtAndCraft = () => {
       </TableRow>
     </TableHead>
     <TableBody>
-      {allCrafts.slice(0,10).map((row) => (
+      {allCrafts.map((row) => (
         <TableRow
        
           key={row._id} 

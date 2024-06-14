@@ -43,7 +43,7 @@ const Additems = () => {
         console.log(newitem);
 
         // send data to the server
-        fetch("http://localhost:5001/items", {
+        fetch("https://assignment-10-server-blond-eight.vercel.app/items", {
             method: 'POST',
             headers: {
                 'content-type': 'application/json'

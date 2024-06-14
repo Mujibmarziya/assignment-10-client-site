@@ -168,14 +168,14 @@ const Navbar = () => {
     </div>
     :
     <div className='flex gap-2 '>
-         <li className='btn btn-ghost bg-black text-white'>
+         <li className='btn btn-ghost bg-pink-800 text-white'>
         <NavLink to='/login'>Log In</NavLink>
     </li>
-    <li className='btn btn-ghost bg-black text-white'>
+    <li className='btn btn-ghost bg-pink-800 text-white'>
     <NavLink 
      to="/register"
      className={({ isActive, isPending }) =>
-       isPending ? "pending" : isActive ? " text-white bg-black  p-2 ml-1 " : ""
+       isPending ? "pending" : isActive ? " text-white bg-pink-800  p-2 ml-1 " : ""
      }
     >Register</NavLink>
     </li>

@@ -2,12 +2,12 @@
 
 const Stat = () => {
     return (
-        <div className='bg-blue-50'>
+        <div className='bg-pink-50'>
 
 <div className=''>
             <h1 className='text-center text-black pt-3  font-bold '>All Stats of Our Arts & Crafts</h1>
         </div>
-            <section className="p-6 my-6 bg-blue-50 dark:bg-gray-100 dark:text-gray-800">
+            <section className="p-6 my-6 bg-pink-50 dark:bg-gray-100 dark:text-gray-800">
 	<div className="container grid grid-cols-1 gap-6 mx-auto sm:grid-cols-2 xl:grid-cols-4">
 		<div className="flex p-4 space-x-4 rounded-lg md:space-x-6 dark:bg-gray-50 dark:text-gray-800">
 			<div className="flex justify-center p-2 align-middle rounded-lg sm:p-4 dark:bg-violet-600">

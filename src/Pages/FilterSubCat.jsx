@@ -15,7 +15,7 @@ const FilterSubCat = () => {
     useEffect(() => {
       const fetchData = async () => {
         try {
-          const response = await axios.get('http://localhost:5001/items');
+          const response = await axios.get('https://assignment-10-server-blond-eight.vercel.app/items');
           const filtered =response.data.filter((singledata)=>singledata.subcategory_Name==subcategory_Name)
           
         setallCrafts(filtered);
@@ -34,7 +34,7 @@ const FilterSubCat = () => {
         <div className='mt-6 w-11/12 mx-auto '>
         <div className=''>
             <Zoom>
-              <h1 className='text-center text-black  font-bold '>All Items of SubCategory ${subcategory_Name}</h1>
+              <h1 className='text-center text-pink-800  font-bold '>All Items of SubCategory {subcategory_Name}</h1>
             </Zoom>
           
         </div>

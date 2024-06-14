@@ -23,7 +23,7 @@ const MyArtAndCraft = () => {
     useEffect(() => {
       const fetchData = async () => {
         try {
-          const response = await axios.get('http://localhost:5001/items');
+          const response = await axios.get('https://assignment-10-server-blond-eight.vercel.app/items');
         //   console.log(response.data);
           const filtered =response.data.filter((singledata)=>singledata.email==user?.email)
           
@@ -54,7 +54,7 @@ const MyArtAndCraft = () => {
       
 
 
-        fetch(`http://localhost:5001/items/${_id}`, {
+        fetch(`https://assignment-10-server-blond-eight.vercel.app/items/${_id}`, {
             method: 'DELETE'
         })
             .then(res => res.json())

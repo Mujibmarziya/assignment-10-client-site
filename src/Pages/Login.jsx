@@ -26,18 +26,7 @@ const Login = () => {
                 navigate(location?.state ? location.state : '/');
                 const user ={ email: result?.user?.email};
                 console.log(user);
-            //   axios.post('https://assignment-11-server-site-phi.vercel.app/jwt',user,{withCredentials:true})
-            //    .then((res)=>{
-            //        console.log(res.data);
-            //        if(res.data.success){
-            //            navigate(location?.state ? location.state : '/'); 
-            //        }
-            //    })
-            //    .catch(error => {
-            //        console.error('Error:', error);
-            //      });
-            //     toast.success("Successfully logged in google.")
-            //     navigate(location?.state ? location.state : '/');
+          
             })
             .catch(error => {
                 console.error(error)
@@ -63,22 +52,7 @@ const Login = () => {
               toast.success("Successfully logged in.")
               navigate(location?.state ? location.state : '/');
           
-              // navigate(location?.state ? location.state : '/');
              
-              // get token
-              // const user ={ email: result.user.email};
-            //   const user ={ email: result?.user?.email};
-            //    console.log(user);
-            //  axios.post('https://assignment-11-server-site-phi.vercel.app/jwt',user,{withCredentials:true})
-            //   .then((res)=>{
-            //       console.log(res.data);
-            //       if(res.data.success){
-            //           navigate(location?.state ? location.state : '/'); 
-            //       }
-            //   })
-            //   .catch(error => {
-            //       console.error('Error:', error);
-            //     });
              
              
 
@@ -100,11 +74,11 @@ const Login = () => {
         <div className="hero min-h-screen bg-base-200">
 <div className="hero-content flex-col ">
 <div>
-      <h1 className=' text-black text-xl font-bold text-center'>Log in to your account.</h1>
+      <h1 className=' text-pink-800 text-xl font-bold text-center'>Log in to your account.</h1>
      
     </div>
 
-<div className="card shrink-0 w-full max-w-sm shadow-2xl border-l-2 border-black bg-base-100">
+<div className="card shrink-0 w-full max-w-sm shadow-2xl shadow-pink-300 bg-base-100">
   <form className="card-body" onSubmit={handlinglogin}>
   
     
@@ -126,19 +100,19 @@ const Login = () => {
       </label>
     </div>
     <div className="form-control mt-6">
-      <button className="btn btn-primary bg-transparent text-black border-2 border-black hover:bg-black hover:text-white hover:border-none">Log in</button>
+      <button className="btn btn-primary border-transparent bg-pink-600  text-white border-2 border-pink-800 hover:bg-black hover:text-white hover:border-none">Log in</button>
     </div>
 
    
     <label className="label">
             Dont have an account?  {" "}
             <Link to="/signup" className="label-text-alt link link-hover">
-            <span className='btn   bg-black text-black border-2 border-black text-white'>Register</span>
+            <span className='btn   border-transparent bg-pink-600   border-2  text-white'>Register</span>
             </Link>
           </label>
   </form>
   <div>
-    <h1 className='text-black font-bold'>Or log in using</h1>
+    <h1 className='text-pink-800 font-bold'>Or log in using</h1>
   </div>
 
   <div className="flex justify-center space-x-4">

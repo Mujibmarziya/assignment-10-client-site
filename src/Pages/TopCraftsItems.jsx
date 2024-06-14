@@ -12,7 +12,7 @@ const TopCraftsItems = () => {
     useEffect(() => {
       const fetchData = async () => {
         try {
-          const response = await axios.get('http://localhost:5001/items');
+          const response = await axios.get('https://assignment-10-server-blond-eight.vercel.app/items');
           setTopCrafts(response.data);
          
        
