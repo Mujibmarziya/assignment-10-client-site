@@ -72,7 +72,7 @@ const MyArtAndCraft = () => {
     return (
         <div className='mt-6 w-11/12 mx-auto'>
         <div className=''>
-            <h1 className='text-center text-black  font-bold '>Our Top Cards</h1>
+            <h1 className='text-center text-pink-800  font-bold '>Our Top Cards</h1>
         </div>
 
         <div className="text-center">
