@@ -9,7 +9,7 @@ const Details = () => {
     const singleCraft= useLoaderData();
     // const {id}= useParams()
     const {user}=useContext(AuthContext);
-    const [isAble, setisAble] = useState(true);
+    
     console.log(singleCraft);
     // console.log(id);
     const {_id,item,image,sdescription,subcategory_Name,price,rating,ptime,customization,stockstatus,email,displayname,userphoto} =singleCraft;
