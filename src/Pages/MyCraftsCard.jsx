@@ -26,7 +26,7 @@ const MyCraftsCard = ({singlecard,handleDelete}) => {
 <h1 className='font-bold  text-pink-500   pb-2 '>Rating: <span className='text-black font-semibold'>{rating}</span></h1>
 
 <div className='mt-3'>
-    <Link className='btn bg-black text-white rounded-xl p-2' to={`/update/${_id}`}>Update</Link>
+    <Link className='btn bg-pink-800 text-white rounded-xl p-2' to={`/update/${_id}`}>Update</Link>
     <Link  onClick={() => handleDelete(_id)} className='btn bg-black text-white rounded-xl p-2' >Delete from wishlist</Link>
   
 </div>
