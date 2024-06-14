@@ -1,17 +1,17 @@
 import React, { useContext, useEffect, useState } from 'react';
-import { Link, useLoaderData, useParams } from 'react-router-dom';
+import { Link, useLoaderData } from 'react-router-dom';
 
-import toast from 'react-hot-toast';
 
-import { AuthContext } from '../AuthProvider.jsx/Authprovider';
+
+
 
 const Details = () => {
     const singleCraft= useLoaderData();
-    // const {id}= useParams()
-    const {user}=useContext(AuthContext);
+   
+    // const {user}=useContext(AuthContext);
     
     console.log(singleCraft);
-    // console.log(id);
+   
     const {_id,item,image,sdescription,subcategory_Name,price,rating,ptime,customization,stockstatus,email,displayname,userphoto} =singleCraft;
 
   
