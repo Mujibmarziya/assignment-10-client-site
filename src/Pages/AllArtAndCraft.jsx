@@ -29,7 +29,7 @@ const AllArtAndCraft = () => {
   
       fetchData();
     }, []);
-    // console.log(allCrafts);
+   
     const {item,image,sdescription,subcategory_Name:selectedCategory,price,rating,ptime,customization,stockstatus,email,displayname,userphoto} =allCrafts;
     return (
         <div>
