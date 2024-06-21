@@ -5,16 +5,20 @@ import TopCraftsCard from './TopCraftsCard';
 import { Fade ,Zoom} from "react-awesome-reveal";
 
 const TopCraftsItems = () => {
-    const {user} = useContext(AuthContext);
+    const {user,loading} = useContext(AuthContext);
     const [topCrafts, setTopCrafts] = useState([]);
-    
+    const [loader, setLoader] = useState(true);
   
     useEffect(() => {
       const fetchData = async () => {
         try {
+          console.log(loader);
+          if (loader) {
+             <span className="loading loading-infinity loading-lg"></span>
+        }
           const response = await axios.get('https://assignment-10-server-blond-eight.vercel.app/items');
           setTopCrafts(response.data);
-         
+         setLoader(false)
        
         } catch (error) {
           console.log(error);
@@ -22,10 +26,10 @@ const TopCraftsItems = () => {
       };
   
       fetchData();
-    }, []);
+    }, [loader]);
 
     return (
-       <Fade>
+   
          <div className='mt-6 w-11/12 mx-auto'>
         <div className=''>
            <Zoom>
@@ -42,7 +46,7 @@ const TopCraftsItems = () => {
         </div>
         
     </div>
-       </Fade>
+  
     );
 };
 

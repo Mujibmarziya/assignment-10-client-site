@@ -10,7 +10,8 @@ const OurTeam = () => {
             </div>
             <div className="grid w-full grid-cols-1 gap-6 md:grid-cols-2">
                 <div className="flex space-x-6">
-                    <img alt="" className="flex-1 flex-shrink-0 object-cover h-56 mb-4 bg-center rounded-sm dark:bg-gray-500" src="https://source.unsplash.com/240x320/?portrait?0" />
+                <img alt="" className="w-32 h-32 object-cover rounded-sm" src="https://i.ibb.co/jGWqy1q/michael-dam-m-EZ3-Po-FGs-k-unsplash.jpg"
+/>
                     <div className="flex flex-col">
                         <h4 className="text-xl font-semibold">Leroy Jenkins</h4>
                         <p className="text-sm dark:text-gray-600">Origami Artist</p>
@@ -34,7 +35,7 @@ const OurTeam = () => {
                     </div>
                 </div>
                 <div className="flex space-x-6">
-                    <img alt="" className="flex-1 flex-shrink-0 object-cover h-56 mb-4 bg-center rounded-sm dark:bg-gray-500" src="https://source.unsplash.com/240x320/?portrait?1" />
+                <img alt=""className="w-32 h-32 object-cover rounded-sm"src="https://i.ibb.co/jGWqy1q/michael-dam-m-EZ3-Po-FGs-k-unsplash.jpg"/>
                     <div className="flex flex-col">
                         <h4 className="text-xl font-semibold">Leroy Jenkins</h4>
                         <p className="text-sm dark:text-gray-600">Glass Painter</p>
@@ -58,7 +59,7 @@ const OurTeam = () => {
                     </div>
                 </div>
                 <div className="flex space-x-6">
-                    <img alt="" className="flex-1 flex-shrink-0 object-cover h-56 mb-4 bg-center rounded-sm dark:bg-gray-500" src="https://source.unsplash.com/240x320/?portrait?2" />
+                <img alt=""className="w-32 h-32 object-cover rounded-sm"src="https://i.ibb.co/jGWqy1q/michael-dam-m-EZ3-Po-FGs-k-unsplash.jpg"/>
                     <div className="flex flex-col">
                         <h4 className="text-xl font-semibold">Leroy Jenkins</h4>
                         <p className="text-sm dark:text-gray-600">Scrapebooking Artist</p>
@@ -82,7 +83,7 @@ const OurTeam = () => {
                     </div>
                 </div>
                 <div className="flex space-x-6">
-                    <img alt="" className="flex-1 flex-shrink-0 object-cover h-56 mb-4 bg-center rounded-sm dark:bg-gray-500" src="https://source.unsplash.com/240x320/?portrait?3" />
+                <img alt=""className="w-32 h-32 object-cover rounded-sm"src="https://i.ibb.co/jGWqy1q/michael-dam-m-EZ3-Po-FGs-k-unsplash.jpg"/>
                     <div className="flex flex-col">
                         <h4 className="text-xl font-semibold">Leroy Jenkins</h4>
                         <p className="text-sm dark:text-gray-600">Manager</p>
@@ -106,7 +107,7 @@ const OurTeam = () => {
                     </div>
                 </div>
                 <div className="flex space-x-6">
-                    <img alt="" className="flex-1 flex-shrink-0 object-cover h-56 mb-4 bg-center rounded-sm dark:bg-gray-500" src="https://source.unsplash.com/240x320/?portrait?4" />
+                <img alt=""className="w-32 h-32 object-cover rounded-sm"src="https://i.ibb.co/jGWqy1q/michael-dam-m-EZ3-Po-FGs-k-unsplash.jpg"/>
                     <div className="flex flex-col">
                         <h4 className="text-xl font-semibold">Leroy Jenkins</h4>
                         <p className="text-sm dark:text-gray-600">Card Making Specialist</p>
@@ -130,7 +131,7 @@ const OurTeam = () => {
                     </div>
                 </div>
                 <div className="flex space-x-6">
-                    <img alt="" className="flex-1 flex-shrink-0 object-cover h-56 mb-4 bg-center rounded-sm dark:bg-gray-500" src="https://source.unsplash.com/240x320/?portrait?5" />
+                <img alt=""className="w-32 h-32 object-cover rounded-sm"src="https://i.ibb.co/jGWqy1q/michael-dam-m-EZ3-Po-FGs-k-unsplash.jpg"/>
                     <div className="flex flex-col">
                         <h4 className="text-xl font-semibold">Leroy Jenkins</h4>
                         <p className="text-sm dark:text-gray-600">Paint Specialist</p>

@@ -6,17 +6,21 @@ import TableContainer from '@mui/material/TableContainer';
 import TableHead from '@mui/material/TableHead';
 import TableRow from '@mui/material/TableRow';
 import Paper from '@mui/material/Paper';
-import React, { useEffect, useState } from 'react';
+import React, { useContext, useEffect, useState } from 'react';
 import axios from 'axios';
 import { Link } from 'react-router-dom';
+import { AuthContext } from '../AuthProvider.jsx/Authprovider';
 
 const AllArtAndCraft = () => {
     const [allCrafts, setallCrafts] = useState([]);
-    
+    const {user,loading} =useContext(AuthContext);
   
     useEffect(() => {
       const fetchData = async () => {
         try {
+          if (loading) {
+            return <span className="loading loading-spinner loading-lg"></span>
+        }
           const response = await axios.get('https://assignment-10-server-blond-eight.vercel.app/items');
           
           
@@ -32,11 +36,11 @@ const AllArtAndCraft = () => {
    
     const {item,image,sdescription,subcategory_Name:selectedCategory,price,rating,ptime,customization,stockstatus,email,displayname,userphoto} =allCrafts;
     return (
-        <div>
+        <div className=" ">
         <div>
             <h1 className='text-pink-800 font-bold text-center mb-3'>All the Arts and crafts Items</h1>
         </div>
-         <TableContainer  component={Paper}>
+         <TableContainer  component={Paper} >
   <Table sx={{ minWidth: 650 }} aria-label="simple table">
     <TableHead>
       <TableRow className='text-pink-800'>

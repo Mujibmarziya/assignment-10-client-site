@@ -1,8 +1,12 @@
-# React + Vite
+ - Website Name: Arts Mania
+ - live website url:https://dreamy-lolly-588504.netlify.app/
+ - Top 5 Features of my website:-
+ - 1. Users can create their own account
+ - 2. Users can add their own arts and craft related problems.
+ - 3. Users can update theier added data or arts items.
+ - 4. users can delete their added items from website and its secure website
+ - My assignment-10 category: B9 A10 Type-02
+ - I have implemented these two packages on my website
+- 1. React-simple-typewriter
+- 2. React Awesome reveal
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
-
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh

@@ -45,7 +45,7 @@ import Error from '../ErrorPage/Error';
 
     {
       path: "/detail/:_id",
-  element: <Details></Details>,
+  element: <Privateroute><Details></Details></Privateroute>,
   loader: ({params}) => fetch(`https://assignment-10-server-blond-eight.vercel.app/items/${params._id}`)
   
     },

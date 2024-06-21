@@ -6,9 +6,9 @@ import MyCraftsCard from './MyCraftsCard';
 import toast from 'react-hot-toast';
 
 const MyArtAndCraft = () => {
-   const {user} =useContext(AuthContext);
+   const {user,loading} =useContext(AuthContext);
 //    console.log(user);
-
+// const [allCrafts, setallCrafts] = useState([]);
     const [myCrafts, setmyCrafts] = useState([]);
     const [selectedCategory, setSelectedCategory] = useState('');
 
@@ -23,16 +23,23 @@ const MyArtAndCraft = () => {
     useEffect(() => {
       const fetchData = async () => {
         try {
+            if (loading) {
+                return <span className="loading loading-infinity loading-lg"></span>
+            }
           const response = await axios.get('https://assignment-10-server-blond-eight.vercel.app/items');
         //   console.log(response.data);
           const filtered =response.data.filter((singledata)=>singledata.email==user?.email)
           
         setmyCrafts(filtered);
+        // console.log('useeefect run hoise');
+        // console.log(myCrafts);
         // console.log(selectedCategory);
         // const filteredcustom =response.data.filter((singledata)=>singledata.customization==selectedCategory)
         if(selectedCategory){
-            const filteredcustom =response.data.filter((singledata)=>singledata.customization==selectedCategory)
+            // setmyCrafts(filtered)
+            const filteredcustom =filtered.filter((singledata)=>singledata.customization==selectedCategory)
             setmyCrafts(filteredcustom)
+            // console.log(allCrafts);
         } 
         // else{
         //     console.log("else");
@@ -46,14 +53,14 @@ const MyArtAndCraft = () => {
   
       fetchData();
     }, [selectedCategory]);
-    console.log(myCrafts.length);
+    // console.log(myCrafts.length);
 
 
     const handleDelete = _id => {
        
       
 
-
+        
         fetch(`https://assignment-10-server-blond-eight.vercel.app/items/${_id}`, {
             method: 'DELETE'
         })
@@ -87,12 +94,22 @@ const MyArtAndCraft = () => {
                     </div>
         <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3 mt-4'>
             {
-                myCrafts.slice(0,6).map(singlecard=>(
-                   <MyCraftsCard key={singlecard._id} handleDelete={handleDelete} singlecard={singlecard}></MyCraftsCard>
-                ))
+                myCrafts && myCrafts.slice(0,6).map(singlecard=>(
+                    <MyCraftsCard key={singlecard._id} handleDelete={handleDelete} singlecard={singlecard}></MyCraftsCard>
+                 ))
             }
+          
            
         </div>
+        {/* <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3 mt-4'>
+            {
+                allCrafts && allCrafts.slice(0,6).map(singlecard=>(
+                    <MyCraftsCard key={singlecard._id} handleDelete={handleDelete} singlecard={singlecard}></MyCraftsCard>
+                 ))
+            }
+          
+           
+        </div> */}
         
     </div>
     );

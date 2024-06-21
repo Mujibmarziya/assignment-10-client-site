@@ -28,7 +28,19 @@ const MyCraftsCard = ({singlecard,handleDelete}) => {
 <div className='mt-3'>
     <Link className='btn bg-pink-800 text-white rounded-xl p-2' to={`/update/${_id}`}>Update</Link>
     <Link  onClick={() => handleDelete(_id)} className='btn ml-2 bg-pink-800 text-white rounded-xl p-2' >Delete </Link>
-  
+    {/* <button className="btn ml-2 bg-pink-800 text-white rounded-xl p-2" onClick={()=>document.getElementById('my_modal_1').showModal()}>Delete</button>
+<dialog id="my_modal_1" className="modal">
+  <div className="modal-box">
+    <h3 className="font-bold text-lg">Hello!</h3>
+    <p className="py-4">Are You Sure You Want To Delete?</p>
+    <div className="modal-action">
+      <form method="dialog" >
+        {/* if there is a button in form, it will close the modal */}
+        {/* <button onClick={() => handleDelete(_id)} className="btn">Yes</button>
+      </form>
+    </div>
+  </div>
+</dialog>  */}
 </div>
 
 </div>
