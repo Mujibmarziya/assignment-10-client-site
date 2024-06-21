@@ -16,6 +16,7 @@ import './styles.css';
 import { Navigation } from 'swiper/modules';
 import TypeWriter from '../Pages/TypeWriter';
 import { Typewriter } from 'react-simple-typewriter';
+import BannerText from './BannerText';
 
 
 export default function Banner() {
