@@ -9,6 +9,8 @@
  - I have implemented these two packages on my website
 - 1. React-simple-typewriter
 - 2. React Awesome reveal
+     - ### Project Concept:
+     - My project is about adding different kinds of arts and craft items from users and any user can access those items.
  -   ## 🛠️ Technologies i used this project.
 ### **Languages:**
 - ![HTML](https://img.icons8.com/color/48/000000/html-5.png) HTML
